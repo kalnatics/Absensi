@@ -1,0 +1,53 @@
+/* primary blue: #476CDA // primary orange: #FA5100*/
+
+body.adminPage,
+body.authPage{
+/*    background-image: url('HOTEL HD.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; */
+}
+
+.box-login {
+/*    width: 65vw;*/
+    height: max-content;
+/*    background-color: rgba(255, 255, 255, 0.9);*/
+/*    border-radius: 20px;*/
+}
+
+.myinput:focus {
+/*    border-color: #FF8C00;*/
+    box-shadow: 0 0 0 0.25rem rgba(114, 146, 204, 0.412) !important;
+}
+
+/*
+.myinput {
+    border-radius: 30px !important;
+    height: 60px !important;
+}
+
+input, select {
+    border-color: rgb(250, 81, 0) !important;
+}
+
+.btn-primary {
+    background-color: #FFD700 !important;
+    border-color: #FA5100 !important;
+}
+
+.color-orange {
+    color: #FA5100;
+}
+
+.buttonAction {
+    width: 200px;
+    height: 100px;
+    
+    transition: .7s;
+}
+
+.buttonAction:hover {
+    transform: translateY(-5px);
+    background-color: #FA5100 !important;
+}*/
+

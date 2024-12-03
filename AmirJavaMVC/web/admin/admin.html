@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-dev="A411_collaboration">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+      body {
+        padding: 2%;
+      }
+      .btn {
+        margin-right: 10px;
+      }
+    </style>
+</head>
+<body class="bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark rounded" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><span><img src="logoSMK.png" width="30" height="30" class="navbar-brand d-inline-block align-top" alt="" style="margin-left: 20px" /></span>Absensi</a
+        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav justify-content-center nav-pills">
+          <li class="nav-item">
+            <button class="btn btn-outline-light btnLokasi">Lokasi</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-danger btn-logout" id="btnLogout">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Hello <span class="usernameHello"></span>!</h1>
+        <h6 class="card-text">Jakarta, <span class="dateTag"></span>!</h6>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row w-90 bawah">
+      <div class="col float-home justify-content-center">
+        <div class="row">
+          <div class="col-3">
+             <a href="tambahLokasi.html" style="color: white !important; text-decoration: none;"><button class="fs-5 btn btn-danger"><i class="fas fa-location-crosshairs"></i> Tambah Lokasi</<button></a> 
+          </div>
+          <div class="col-6">
+            <h4 class="text-center">List Presensi</h4>
+            <hr />
+          </div>
+          <div class="col-3 text-end">
+             <a target="_blank" href="generateQr.html" style="color: white !important; text-decoration: none;"><button class="fs-5 btn btn-dark">Generate QR Code <i class="fas fa-qrcode"></i></<button></a> 
+          </div>
+        </div>
+
+        <table class="table table-light table-hover table-borderless" id="tabelsiswa">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">SISWA/USER</th>
+              <th scope="col">LOKASI ABSEN</th>
+              <th scope="col">KETERANGAN</th>
+              <th scope="col">WAKTU</th>
+            </tr>
+          </thead>
+          <tbody class="body-presensi">
+            <tr>
+              <td colspan="4" scope="row">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="MyLibrary/jquery-3.6.0.min.js"></script>
+    <script src="MyLibrary/fontawesome/js/all.min.js"></script>
+    <script src="MyLibrary/popper.min.js"></script>
+    <script src="MyLibrary/bootstrap.min.js"></script>
+    <script src="MyLibrary/html5-qrcode.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
